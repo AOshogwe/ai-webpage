@@ -1,3 +1,8 @@
+import express from "express";
+import cors from "cors";
+import fetch from "node-fetch";   // if needed for API calls
+import dotenv from "dotenv";
+
 const express = require('express');
 const cors = require('cors');
 const fetch = require('node-fetch');
@@ -5,7 +10,7 @@ const fetch = require('node-fetch');
 const app = express();
 const PORT = 3000;
 
-const API_KEY = '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';
+const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
 
 app.use(cors());
 app.use(express.json());

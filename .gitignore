@@ -1,0 +1,9 @@
+# Node modules and system files
+node_modules/
+.DS_Store
+
+# Environment and secrets
+.env
+.env.local
+.env.production
+.env.development
